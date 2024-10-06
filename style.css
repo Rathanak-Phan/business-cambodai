@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+
+* {
+    font-family: "Hanuman";
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-weight: 400; */
+    /* font-size: 16px; */
+    /* line-height: 24px; */
+    color: rgb(0, 0, 0);
+    /* text-decoration: none; */
+    /* font-style: normal; */
+}
+
+/* header */
+.line-hover {
+    position: relative;
+    display: inline-block;
+    color: aliceblue;
+
+    text-decoration: none; /* Remove default underline */
+}
+
+.line-hover::before, .line-hover::after {
+    content: "";
+    position: absolute;
+    width: 50%; /* Each half will be 50% of the total width */
+    height: 3px;
+    bottom: -8px; /* Position below the text */
+    transition: transform 0.3s ease; /* Animation effect */
+}
+
+.line-hover::before {
+    background-color: red; /* Left half color */
+    left: 0; /* Start from the left */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left; /* Animation starts from the left */
+}
+
+.line-hover::after {
+    background-color: grey; /* Right half color */
+    right: 0; /* Start from the right */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: right; /* Animation starts from the right */
+}
+
+.line-hover:hover::before {
+    transform: scaleX(1); /* Expand to 50% width from the left */
+}
+
+.line-hover:hover::after {
+    transform: scaleX(1); /* Expand to 50% width from the right */
+}
+
+/* responsice header */
+@media (max-width: 575.98px) { 
+    /* header */
+    .my-logo {
+        width: 25%;
+
+    }
+    
+    .my-header-respon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .my-menu-icon-respon{
+        display: flex;
+        margin-left: 50%;
+    }
+
+    .my-search-icon{
+
+        margin-right: 5% !important;
+    }
+
+    /*  */
+
+}
+
+/* main hero content 1 */
+.hero1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(file/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.button1:hover {
+    background-color: transparent; /* Background color on hover */
+    color: white !important; /* Text color on hover */
+}
+
+.button2:hover {
+    background-color: red !important;
+}
+
+@media (max-width: 1024px){
+    .my-hero1{
+        width: 80% !important;
+        height: auto !important;
+    }
+
+    .my-hero1-text{
+        font-size: 35px !important;
+        font-weight: 500 !important;
+    }
+
+    .my-title-button{
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+    .align-text{
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+}
+
+@media (min-width: 1024px){
+    
+    .my-height-for-text{
+        height: 50%;
+        
+    }
+
+}
+
+@media (max-width: 575.98px){
+    
+    
+
+    /* hero1 */
+    .my-hero1{
+        width: 100% !important;
+        display: block;
+
+    }
+
+    .my-hero1-text{
+        display: flex;
+        text-align: justify;
+    }
+
+    .my-hero1-poster{
+        display: flex;
+        text-align: justify;
+    }
+
+    .my-hero1-button{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .under-line{
+        font-size: 25px !important;
+    }
+
+    /* hero3 */
+    
+    .my-box2 {
+        display: block !important;
+        width: 100% !important; /* Ensure full width on small screens */
+    }
+    
+    .my-box-image-poster{
+        display: none !important;
+    }
+
+    
+}
+
+@media (max-width: 1444px) {
+    .my-hide{
+        display: none !important;
+    }
+}
+
+
+/* main hero content 2 */
+.under-line::after{
+    content: "";
+    width: 15%;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+}
+  
+
+/* Image zoom effect on hover */
+.zoom-container:hover img {
+    transform: scale(1.1); /* Zooms the image to 120% */
+}
+
+
+.under-line-hover{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.under-line-hover:hover{
+    text-decoration: underline !important;
+}
+
+
+
+
+
+
+
+/* test */
+
+.box1{
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: bisque;
+}
+.box2{
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: rgb(167, 99, 16);
+    
+}
+.box3{
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: rgb(82, 51, 9);
+}
+.box4{
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: rgb(3, 126, 52);
+}
+
+.box5{
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: rgb(201, 138, 57);
+}
+
+.box6{
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: rgb(57, 16, 206);
+}
+
+
+
+/* <p class="under-line" style="color: black; font-size: 40px; position: relative;">ការផ្សាយពាណិជ្ជកម្មរបស់យើង</p> */
