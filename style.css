@@ -190,7 +190,7 @@
 /* main hero content 2 */
 .under-line::after{
     content: "";
-    width: 15%;
+    width: 30px;
     height: 3px;
     bottom: -10px;
     left: 0;
@@ -215,7 +215,19 @@
     text-decoration: underline !important;
 }
 
-
+.add-image::before {
+    content: '';
+    display: block;
+    background-image: url('file/post2.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 56.25%; /* Adjust based on aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
 
 
